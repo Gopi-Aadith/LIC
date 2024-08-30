@@ -1,0 +1,146 @@
+
+.Home {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: left;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(src/assets/hero.png);
+    background-position: center;
+    background-size: cover;
+    /* overflow: hidden; */
+  }
+  
+  .content {
+    max-width: 30%;
+    margin-left: 3vw;
+  }
+  
+  .content h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: var(--main-color); /* Adjust color as needed */
+    margin-bottom: 5vh;
+  }
+  
+  .get-quote-button {
+    display: inline-block;
+    padding: 25px 35px;
+    background-color: transparent;
+    color: var(--main-color);
+    border: solid 0.3rem var(--main-color);
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .get-quote-button:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border: solid 0.3rem var(--main-color);
+  }
+
+  /* ---------------------------------------------------------------small-laptop----------------------------------------------------------- */
+
+  @media (max-width: 1500px) {
+
+    .content h1{
+      font-size: 2.5rem;
+    }
+
+    .content{
+      max-width: 30%;
+    }
+
+    .get-quote-button{
+      font-size: 1rem;
+      padding: 20px 25px;
+      border: solid 0.2rem var(--main-color);
+    }
+  }
+
+  /* ---------------------------------------------------------------mobile-1000px------------------------------------------------------------------- */
+
+  @media (max-width: 1000px ){
+
+    .Home{
+      justify-content: center;
+      background: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(src/Components/Pages/Home/image.png);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .content{
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      max-width: 50%;
+      margin-left: 0;
+      margin-bottom: 200px;
+    }
+
+    .content h1{
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .get-quote-button{
+      width: 50%;
+    }
+    
+  }
+
+  /* ---------------------------------------------------------------mobile-700px------------------------------------------------------------------- */
+  
+  @media (max-width:700px){
+
+    .content h1{
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .get-quote-button{
+      width: 50%;
+      font-size: 0.9rem;
+      padding: 15px 10px;
+    }
+    
+  }
+
+  /* ---------------------------------------------------------------mobile-500px------------------------------------------------------------------- */
+
+  @media (max-width:500px){
+
+    .content{
+      max-width: 75%;
+    }
+
+    .get-quote-button{
+      width: 75%;
+      font-size: 0.9rem;
+      padding: 20px 10px;
+    }
+    
+  }
+
+  /* ---------------------------------------------------------------mobile-300px------------------------------------------------------------------- */
+
+  @media (max-width:500px){
+
+    .content{
+      max-width: 75%;
+    }
+
+    .get-quote-button{
+      padding: 20px 20px;
+    }
+  }
+
+
+

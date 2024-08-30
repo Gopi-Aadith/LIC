@@ -1,0 +1,244 @@
+.About{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 90vh;
+    background-color: var(--bg-color);
+    margin-top: 10vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    border: solid 5px var(--main-color);
+    border-radius: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.container img{
+    height: 100%;
+    width: auto;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 90vh;
+    background-color: var(--bg-color);
+    margin-top: 10vh;
+}
+
+.contnt{
+    width: 80%;
+    height: 80%;
+}
+
+.contnt h1{
+    font-size: 2rem;
+    font-size: 600;
+    color: var(--main-color);
+    margin-bottom: 2%;
+}
+
+.contnt h2{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--main-color);
+    line-height: 1.2;
+    margin-bottom: 5%;
+}
+
+.contnt p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.sub-content{
+    display: flex;
+    align-items: center;
+    height: 25%;
+    margin-top: 2%;
+}
+
+.sub-content img{
+    width: 70px;
+    height: auto;
+}
+
+.small-content{
+    margin-left: 5%;
+}
+
+.small-content h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.small-content h1{
+    margin-bottom: 2%;
+}
+
+/* -------------------------------------------------------------------------- small-laptop----------------------------------------------------------------------------- */
+
+@media (max-width: 1500px){
+
+    .About{
+        height: 100%;
+        align-items: center;
+        padding: 5% 0;
+    }
+
+    .img-container{
+        margin-top: 0;
+    }
+
+    .about-content{
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .contnt h1{
+        font-size: 1.3rem;
+    }
+
+    .contnt h2{
+        font-size: 2.5rem;
+        margin-bottom: 3%;
+    }
+
+    .contnt p{
+        font-size: 1rem;
+    }
+
+    .sub-content img{
+        width: 50px;
+    }
+
+    .small-content h1{
+        font-size: 1.3rem;
+    }
+
+    .small-content h3{
+        font-size: 0.8rem;
+    }
+}
+
+/* -------------------------------------------------------------------------- portrait-screen----------------------------------------------------------------------------- */
+
+@media (max-width: 1000px){
+    .About{
+        flex-direction: column;
+        padding: 10% 0;
+        height: 100%;
+    }
+
+    .img-container{
+        width: 100vw;
+        height: 50vh;
+        margin-top: 0;
+    }
+
+    .container{
+        width: 80%;
+        height: 80%;
+    }
+
+    .about-content{
+        width: 100vw;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    /* .container img{
+        width: 100%;
+        height: auto;
+    } */
+
+    .contnt h1{
+        font-size: 1.5rem;
+        margin: 5% 0;
+    }
+
+    .contnt p{
+        font-size: 1.2rem;
+        margin: 5% 0;
+    }
+
+    .small-content h3{
+        font-size: 1rem;
+        margin: 5% 0;
+    }
+
+    .small-content p{
+        font-size: 1rem;
+        margin: 5% 0;
+    }
+}
+
+/* -------------------------------------------------------------------------- portrait-screen----------------------------------------------------------------------------- */
+
+@media (max-width: 500px){
+    .About{
+        flex-direction: column;
+        padding: 10% 0;
+        height: 100%;
+    }
+
+    .img-container{
+        width: 100vw;
+        height: 50vh;
+        margin-top: 0;
+    }
+
+    .container{
+        width: 80%;
+        height: 70%;
+    }
+
+    .about-content{
+        width: 100vw;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .contnt h1{
+        font-size: 1rem;
+        margin: 5% 0;
+    }
+
+    .contnt h2{
+        font-size: 2rem;
+        margin: 5% 0;
+    }
+
+    .contnt p{
+        font-size: 0.8rem;
+        margin: 5% 0;
+    }
+
+    .small-content h3{
+        font-size: 0.8rem;
+        margin: 5% 0;
+    }
+
+    .sub-content img{
+        width: 40px;
+        height: auto;
+    }
+}
